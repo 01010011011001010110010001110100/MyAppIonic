@@ -117,3 +117,15 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+
+/* Ocultar menú en móvil cuando está cerrado */
+@media (max-width: 768px) {
+  ion-split-pane:not(.split-pane-visible) ion-menu {
+    display: none;
+  }
+}
+
+/* Mostrar siempre el botón de menú */
+ion-menu-toggle {
+  display: block !important;
+}
